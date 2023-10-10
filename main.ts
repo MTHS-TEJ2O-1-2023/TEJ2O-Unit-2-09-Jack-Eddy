@@ -49,4 +49,4 @@ input.onGesture(Gesture.Shake, function () {
   // pause
   basic.pause(5000)
   basic.showIcon(IconNames.Happy)
-  })
+})
