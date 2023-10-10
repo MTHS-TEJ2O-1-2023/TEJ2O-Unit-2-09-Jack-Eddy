@@ -26,13 +26,13 @@ input.onGesture(Gesture.Shake, function () {
   }
 
   // paper
-  if (randomNumber === 1) {
-    basic.showIcon(IconNames.Scissors)
-  }
-
-  // paper
   if (randomNumber === 2) {
     basic.showIcon(IconNames.Square)
+  }
+
+  // scissors
+  if (randomNumber === 3) {
+    basic.showIcon(IconNames.Scissors)
   }
 
   // add point to score
