@@ -20,33 +20,33 @@ input.onGesture(Gesture.Shake, function () {
   randomNumber = randint(0, 2)
   basic.clearScreen()
 
-// rock
-  if (randomNumber == 0) {
+  // rock
+  if (randomNumber === 0) {
     basic.showIcon(IconNames.SmallSquare)
   }
 
-// paper
-  if (randomNumber == 1) {
-    basic.showIcon(IconNames.Scissors)
-  }
-
-// paper
-  if (randomNumber == 2) {
+  // paper
+  if (randomNumber === 2) {
     basic.showIcon(IconNames.Square)
   }
 
-// add point to score
-input.onButtonPressed(Button.A, function () {
-  score = score + 1
-  basic.showIcon(IconNames.Yes)
-})
+  // scissors
+  if (randomNumber === 3) {
+    basic.showIcon(IconNames.Scissors)
+  }
 
-// show score
-input.onButtonPressed(Button.B, function () {
-  basic.showString("Score: " + (score).toString())
-})
+  // add point to score
+  input.onButtonPressed(Button.A, function () {
+    score = score + 1
+    basic.showIcon(IconNames.Yes)
+  })
 
-// pause
-basic.pause(5000)
-basic.showIcon(IconNames.Happy)
+  // show score
+  input.onButtonPressed(Button.B, function () {
+    basic.showString('Score: ' + (score).toString())
+  })
+
+  // pause
+  basic.pause(5000)
+  basic.showIcon(IconNames.Happy)
 })
