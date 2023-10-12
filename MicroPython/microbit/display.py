@@ -22,7 +22,7 @@ def clear():
     pass
 
 
-def show(image, delay=400, *, wait=True, loop=False, clear=False):
+def sleep(5000)show(image, delay=400, *, wait=True, loop=False, clear=False):
     """If image is a string, float or integer, display letters/digits in sequence. Otherwise,
     if image is an iterable sequence of images, display these images in sequence. Each letter,
     digit or image is shown with delay milliseconds between them.
